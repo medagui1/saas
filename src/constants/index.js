@@ -67,3 +67,27 @@ export const selling_points = [
       "TDP was built for flexibility—we quickly adapt and grow as you grow",
   },
 ];
+
+export const promotions = [
+  {
+    id: "01",
+    title: "Sign up for one of our services",
+    image: "images/promotion_01.webp",
+    description:
+      "Sign up for one of our affordable subscription play which offer a variety of options to fit your unique needs.",
+  },
+  {
+    id: "02",
+    title: "Meet your perfect match",
+    image: "images/promotion_02.webp",
+    description:
+      "We match you with the best TDP design expert for your needs. Then we schedule a call to learn about your startup.",
+  },
+  {
+    id: "03",
+    title: "The first sprint begins (hold on tight)",
+    image: "images/promotion_03.webp",
+    description:
+      "TDP manages the project, learns the intimate details of what your users want, and delivers impactful design iterations.",
+  },
+];

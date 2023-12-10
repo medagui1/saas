@@ -5,6 +5,7 @@ import './App.css'
 import Hero from './sections/Hero'
 import Customers from './sections/Customers'
 import SellingPoints from './sections/SellingPoints'
+import Promotion from './sections/Promotion'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Customers />
       <SellingPoints />
+      <Promotion />
     </main>
   )
 }
