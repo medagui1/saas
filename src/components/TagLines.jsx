@@ -5,7 +5,7 @@ import Button from "./Button";
 const TagLines = () => {
   return (
     <>
-      <div className="flex w-full justify-between max-lg:justify-center items-center px-24 my-12 flex-wrap max-lg:px-4 max-lg:gap-8 ">
+      <div className="flex w-full justify-between max-lg:justify-center items-center px-24 my-12 flex-wrap max-lg:px-4 max-lg:gap-8 lg:px-[450px] ">
         {taglines.map((tagline) => (
           <div className="flex gap-2 items-center" key={tagline}>
             <img src="icons/tagline_icon.png" alt="" />
