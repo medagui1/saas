@@ -11,7 +11,7 @@ const Promotion = () => {
         How <span className="text-secondary"> signing up </span>
         with the design project <span className="text-secondary">works</span>!?
       </h2>
-      <p className="max-w-[1000px] max-sm:my-4">
+      <p className="max-w-[1000px] max-sm:my-4 ">
         Take a minute to imagine how you’d feel watching your user count grow,
         and retention rates stay consistently high. When you prioritize
         effective UX, better retention and growth are natural consequences.

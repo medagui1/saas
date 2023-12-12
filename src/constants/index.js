@@ -1,3 +1,5 @@
+import InsightCard from "../components/InsightCard";
+
 export const navLinks = [
   {
     name: "How It Works",
@@ -89,5 +91,15 @@ export const promotions = [
     image: "images/promotion_03.webp",
     description:
       "TDP manages the project, learns the intimate details of what your users want, and delivers impactful design iterations.",
+  },
+];
+
+export const reviews = [
+  {
+    name: "Erick Desoto",
+    role: "VP of Product as Socure",
+    image: "images/reviewer.webp",
+    review:
+      "TDP helped identify the main pain points and designed a new UX that is accessible and easy to understand. The redesign pushed us forward on our mission to be able to verify 100% of IDs in real-time, and we raised over $100M in funding.",
   },
 ];
