@@ -103,3 +103,79 @@ export const reviews = [
       "TDP helped identify the main pain points and designed a new UX that is accessible and easy to understand. The redesign pushed us forward on our mission to be able to verify 100% of IDs in real-time, and we raised over $100M in funding.",
   },
 ];
+
+export const plans = [
+  {
+    name: "Essential",
+    description: "Great for basic UI/UX design needs",
+    price: {
+      monthly: "$2600",
+      quarterly: "$7020",
+      yearly: "$26520",
+    },
+    including: [
+      "Ui execution",
+      "Connect on slack",
+      "One 30 minutes meeting a week",
+    ],
+    design_team: ["1 designer working with 4-5 other customers at the same time"],
+  },
+  {
+    name: "Pro",
+    description: "Great for end-to-end product design",
+    price: {
+      monthly: "$3595",
+      quarterly: "$9706",
+      yearly: "$36669",
+    },
+    including: [
+      "Everything in essential",
+      "Full UI/UX design and research",
+      "Dev ready figma files",
+      "One 1 hour meeting a week",
+    ],
+    design_team: [
+      "1 design lead",
+      "1 designer working on 2-3 other customers at the same time",
+    ],
+  },
+  {
+    name: "Turbo",
+    description: "Great for products that require more design horsepower and tight timelines",
+    price: {
+      monthly: "$5200",
+      quarterly: "$14040",
+      yearly: "$53040",
+    },
+    including: [
+      "Everything in Essential and Pro",
+      "User testing",
+      "Figma Prototypes",
+      "Flexible meetings",
+      "Custom workflows to speed up delivery"
+    ],
+    design_team: [
+      "1 design lead",
+      "1 designer working on 1 other customer at the same time",
+    ],
+  },
+];
+
+export const plan_time_intervals = [
+  {
+    time : 'monthly',
+    saving : '',
+    duration : 'per month'
+  },
+  {
+    time : 'quarterly',
+    saving : 'save 10%',
+    duration : 'per quarter'
+  },
+  {
+    time : 'yearly',
+    saving : 'save 15%',
+    duration : 'per year'
+  },
+
+]

@@ -32,7 +32,7 @@ const BusinessInsights = () => {
       ))}
 
       {/* <InsightCard /> */}
-      <div className="my-20 ">
+      <div className="my-20 max-sm:my-12">
         {reviews.map((review, index) => (
           <Review key={index} {...review}/>
         ))}

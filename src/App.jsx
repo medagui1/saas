@@ -7,6 +7,7 @@ import Customers from './sections/Customers'
 import SellingPoints from './sections/SellingPoints'
 import Promotion from './sections/Promotion'
 import BusinessInsights from './sections/BusinessInsights'
+import Plans from './sections/Plans'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <SellingPoints />
       <Promotion />
       <BusinessInsights />
+      <Plans />
     </main>
   )
 }
