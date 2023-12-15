@@ -179,3 +179,12 @@ export const plan_time_intervals = [
   },
 
 ]
+
+export const decision_making_list = [
+  "You want a new, innovative, and user-centered UX strategy for an existing product",
+  "You want to understand where users struggle when using your product",
+  "You want to translate complex data into an easy-to-understand dashboard",
+  "You need additional design resources that synergize with your (already) amazing design team",
+  "You‘re researching how UX can impact you business growth",
+  "You want to understand your users and design products that meet their needs"
+]
