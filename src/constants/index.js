@@ -118,7 +118,9 @@ export const plans = [
       "Connect on slack",
       "One 30 minutes meeting a week",
     ],
-    design_team: ["1 designer working with 4-5 other customers at the same time"],
+    design_team: [
+      "1 designer working with 4-5 other customers at the same time",
+    ],
   },
   {
     name: "Pro",
@@ -141,7 +143,8 @@ export const plans = [
   },
   {
     name: "Turbo",
-    description: "Great for products that require more design horsepower and tight timelines",
+    description:
+      "Great for products that require more design horsepower and tight timelines",
     price: {
       monthly: "$5200",
       quarterly: "$14040",
@@ -152,7 +155,7 @@ export const plans = [
       "User testing",
       "Figma Prototypes",
       "Flexible meetings",
-      "Custom workflows to speed up delivery"
+      "Custom workflows to speed up delivery",
     ],
     design_team: [
       "1 design lead",
@@ -163,22 +166,21 @@ export const plans = [
 
 export const plan_time_intervals = [
   {
-    time : 'monthly',
-    saving : '',
-    duration : 'per month'
+    time: "monthly",
+    saving: "",
+    duration: "per month",
   },
   {
-    time : 'quarterly',
-    saving : 'save 10%',
-    duration : 'per quarter'
+    time: "quarterly",
+    saving: "save 10%",
+    duration: "per quarter",
   },
   {
-    time : 'yearly',
-    saving : 'save 15%',
-    duration : 'per year'
+    time: "yearly",
+    saving: "save 15%",
+    duration: "per year",
   },
-
-]
+];
 
 export const decision_making_list = [
   "You want a new, innovative, and user-centered UX strategy for an existing product",
@@ -186,5 +188,33 @@ export const decision_making_list = [
   "You want to translate complex data into an easy-to-understand dashboard",
   "You need additional design resources that synergize with your (already) amazing design team",
   "You‘re researching how UX can impact you business growth",
-  "You want to understand your users and design products that meet their needs"
-]
+  "You want to understand your users and design products that meet their needs",
+];
+
+export const frequently_asked_question = [
+  {
+    question: "Do I really get unlimited design services?",
+    answer:
+      "Yes, our subscription plans offer unlimited design services for a fixed monthly fee. You can request as many designs as you need within the scope of your plan.",
+  },
+  {
+    question: "What is a realistic turnaround time?",
+    answer:
+      "The turnaround time depends on the complexity of the project. Generally, we aim to deliver initial designs within 3 business days. Revisions and finalization may take additional time.",
+  },
+  {
+    question: "I need my design ASAP-Can you help?",
+    answer:
+      "Yes, we offer expedited services for urgent design needs. Please contact our support team to discuss your specific requirements, and we will do our best to accommodate your timeline.",
+  },
+  {
+    question: "What types of projects do you work on?",
+    answer:
+      "We work on a wide range of projects, including but not limited to logos, branding, marketing materials, social media graphics, web design, and more. If you have a specific project in mind, feel free to reach out to us for more details.",
+  },
+  {
+    question: "What if I want to cancel my service?",
+    answer:
+      "You can cancel your subscription at any time. Please log in to your account and navigate to the cancellation section. Keep in mind that canceling your service will take effect at the end of your current billing period.",
+  },
+];

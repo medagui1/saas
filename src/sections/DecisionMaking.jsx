@@ -14,7 +14,7 @@ const DecisionMaking = () => {
         How to know if <span className="text-secondary">ADP</span> if right for your {" "}
         <span className="text-secondary">startup</span>
       </h2>
-      <div className="flex flex-wrap gap-16 mx-20 justify-center items-stretch max-sm:mx-4 max-sm:gap-4 max-lg:gap-8">
+      <div className="flex flex-wrap gap-16 mx-20 justify-center items-start max-sm:mx-4 max-sm:gap-4 max-lg:gap-8">
         {decision_making_list.map((decision, index) => (
             <Decision key={decision} decision={decision} isLeft={index % 2 === 0 ? true : false}/>
         ))}

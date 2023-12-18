@@ -9,6 +9,7 @@ import Promotion from './sections/Promotion'
 import BusinessInsights from './sections/BusinessInsights'
 import Plans from './sections/Plans'
 import DecisionMaking from './sections/DecisionMaking'
+import FAQs from './sections/FAQs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
       <BusinessInsights />
       <Plans />
       <DecisionMaking />
+      <FAQs />
     </main>
   )
 }
