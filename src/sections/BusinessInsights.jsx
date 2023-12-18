@@ -21,7 +21,7 @@ export const insights = [
 
 const BusinessInsights = () => {
   return (
-    <section className="bg-[#292526] py-24 px-32 max-lg:px-4 max-sm:py-4 max-lg:py-16 flex flex-col justify-center items-center">
+    <section className="bg-[#292526] py-24 px-32 max-lg:px-4 max-sm:py-8 max-lg:py-16 flex flex-col justify-center items-center">
       <h2 className="text-5xl max-sm:text-2xl font-bold capitalize  mb-8 max-sm:mb-4 max-lg:mb-6 text-white lg:mx-24">
         How <span className="text-secondary">accessible</span> UX design is
         changing the <span className="text-secondary">businesses</span> for the

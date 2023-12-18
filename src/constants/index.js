@@ -218,3 +218,18 @@ export const frequently_asked_question = [
       "You can cancel your subscription at any time. Please log in to your account and navigate to the cancellation section. Keep in mind that canceling your service will take effect at the end of your current billing period.",
   },
 ];
+
+export const social_links = [
+  {
+    icon : 'icons/mail.svg',
+    link : 'hello@designproject.io'
+  },
+  {
+    icon : 'icons/instagram.svg',
+    link : '@designproject.io'
+  },
+  {
+    icon : 'icons/linkedin.svg',
+    link : 'The design Project'
+  }
+]

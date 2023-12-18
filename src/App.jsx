@@ -10,6 +10,8 @@ import BusinessInsights from './sections/BusinessInsights'
 import Plans from './sections/Plans'
 import DecisionMaking from './sections/DecisionMaking'
 import FAQs from './sections/FAQs'
+import CallToAction from './sections/CallToAction'
+import Footer from './sections/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,8 @@ function App() {
       <Plans />
       <DecisionMaking />
       <FAQs />
+      <CallToAction />
+      <Footer />
     </main>
   )
 }

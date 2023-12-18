@@ -10,7 +10,7 @@ const Plans = () => {
   return (
     <section className="w-full flex flex-col justify-center items-center py-32 max-sm:py-8">
       <PlanIntervals plan={planInterval} setPlan={setPlanInterval} />
-      <div className="flex gap-8 my-24 flex-wrap mx-20 items-stretch justify-center">
+      <div className="flex gap-8 my-24 flex-wrap mx-20 items-stretch justify-center max-sm:my-12">
         {plans.map((plan, index) => (
             
           <PlanCard plan={plan} key={plan.name} planInterval={planInterval} middle={index === 1 ? true : false} />

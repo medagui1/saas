@@ -11,7 +11,7 @@ const FAQs = () => {
         Our most <span className="text-secondary">frequently</span> asked
         questions
       </h2>
-      <div className="w-full px-40">
+      <div className="w-full px-40 max-sm:px-2">
         {frequently_asked_question.map((question) => (
           <FAQ question={question.question} key={question.question} answer={question.answer}/>
         ))}
