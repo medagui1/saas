@@ -4,14 +4,14 @@ const PlanCard = ({ plan, planInterval, middle }) => {
   console.log(plan.price[`${planInterval}`]);
   console.log(planInterval.duration);
   return (
-    <div className={` rounded-xl border-[1px] py-16 px-12 w-[500px] max-sm:max-w-[300px] max-sm:py-6 max-sm:px-4 relative ${middle ? "border-black bg-secondary text-white" : "border-secondary"}`}>
+    <div className={` rounded-xl border-[1px] py-16 px-12 w-[500px] max-sm:max-w-[300px] max-sm:py-6 max-sm:px-4 relative ${middle ? "border-[#292526]  bg-secondary text-white" : "border-secondary"}`}>
       <h4 className="font-bold text-2xl mb-2"> {plan.name} </h4>
       <p> {plan.description} </p>
-      <h5 className={`${middle ? 'text-black' : 'text-secondary'} font-bold text-4xl mt-12 mb-2`}>
+      <h5 className={`${middle ? 'text-[#292526]' : 'text-secondary'} font-bold text-4xl mt-12 mb-2`}>
         {" "}
         {plan.price[`${planInterval.time}`]}{" "}
       </h5>
-      <p className={`${middle ? 'text-black' : 'text-secondary'}  font-bold uppercase`}>
+      <p className={`${middle ? 'text-[#292526] ' : 'text-secondary'}  font-bold uppercase`}>
         {" "}
         {planInterval.duration}{" "}
       </p>
@@ -38,7 +38,7 @@ const PlanCard = ({ plan, planInterval, middle }) => {
           </p>
         ))}
       </div>
-      <button className={`${middle ? "border-white" : "border-black"} rounded-xl  border-2 px-20 max-sm:px-12 py-2 mb-8  uppercase flex gap-4 justify-center items-center absolute bottom-0 left-0 right-0  m-auto`}>
+      <button className={`${middle ? "border-white" : "border-[#292526] "} rounded-xl  border-2 px-20 max-sm:px-12 py-2 mb-8  uppercase flex gap-4 justify-center items-center absolute bottom-0 left-0 right-0  m-auto max-sm:mx-9 `}>
         <p className="font-bold text-sm">Try free </p>
         <p className="text-4xl font-bold">&#x2192;</p>
       </button>

@@ -10,7 +10,7 @@ const Hero = () => {
       <Title />
       <TagLines />
       <div className="w-full flex justify-center items-center relative top-[-15px]">
-        <img src="images/hero.png" alt="" />
+        <img src="images/hero.webp" alt="" />
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const PlanIntervals = ({ plan, setPlan }) => {
             className={` border-secondary border-[1px] sm:px-8 py-2 max-sm:w-[160px] font-bold max-sm:rounded-xl ${
               index === 0 && "rounded-l-xl max-sm:rounded-xl"
             } ${index === plan_time_intervals.length - 1 && "rounded-r-xl max-sm:rounded-xl"} ${
-              planInterval === plan && "bg-black text-white border-black"
+              planInterval === plan && "bg-[#292526] text-white border-[#292526] "
             }`}
           >
             <p className="uppercase"> {planInterval.time} </p>

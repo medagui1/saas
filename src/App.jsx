@@ -17,7 +17,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main className='font-montserrat bg-[#E0EAF3]'>
+    <main className='font-montserrat bg-[#E0EAF3] text-[#292526] '>
       <Hero />
       <Customers />
       <SellingPoints />

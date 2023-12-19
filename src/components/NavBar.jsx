@@ -31,7 +31,7 @@ const NavBar = () => {
 
       {isMenuShown && (
         <div className="overflow-hidden">
-          <div className="bg-[#00000095] w-[50%] h-[100vh] absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px]" onClick={() => setIsMenuShown(!isMenuShown)}>
+          <div className="bg-[#29252695] w-[50%] h-[100vh] absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px]" onClick={() => setIsMenuShown(!isMenuShown)}>
 
           </div>
           <div className="bg-secondary text-white absolute top-0 left-0 h-[100vh] z-30 ml-[-8px] mt-[-16px] justify-center items-center flex flex-col w-[80%] text-xl gap-6 font-semibold">
@@ -44,7 +44,7 @@ const NavBar = () => {
 
             {navLinks.map((link) => (
               <a href={link.link} key={link.name}>
-                <p className={`${link.selected && "text-black"} `}>
+                <p className={`${link.selected && "text-[#292526] "} `}>
                   {link.name}
                 </p>
               </a>
