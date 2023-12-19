@@ -56,4 +56,6 @@ If you encounter any issues or have feedback, please feel free to open an issue
 
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This project is licensed under the [MIT License](LICENSE).
