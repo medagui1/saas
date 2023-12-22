@@ -29,12 +29,11 @@ const NavBar = () => {
         <img src="icons/logo.png" alt="Logo" />
       </div>
 
-      {isMenuShown && (
         <div className="overflow-hidden">
-          <div className="bg-[#29252695] w-[50%] h-[100vh] absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px]" onClick={() => setIsMenuShown(!isMenuShown)}>
+          <div className={`bg-[#29252695] h-[100vh]  absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px] transition-[width, opacity] duration-500 ease-in-out ${isMenuShown ? "opacity-1 w-[100%]" : "opacity-0 w-0"}`} onClick={() => setIsMenuShown(!isMenuShown)}>
 
           </div>
-          <div className="bg-secondary text-white absolute top-0 left-0 h-[100vh] z-30 ml-[-8px] mt-[-16px] justify-center items-center flex flex-col w-[80%] text-xl gap-6 font-semibold">
+          <div className={`bg-secondary text-white absolute top-0  h-[100vh] z-30  mt-[-16px] justify-center items-center flex flex-col text-xl gap-6 font-semibold transition-[left] duration-500 ease-in-out w-[80%] ${isMenuShown ? "left-0" : " left-[-100%] "}`}>
             <img
               src="icons/close.svg"
               alt=""
@@ -51,7 +50,6 @@ const NavBar = () => {
             ))}
           </div>
         </div>
-      )}
 
       <div className={`flex gap-12 font-bold uppercase max-lg:hidden`}>
         {navLinks.map((link) => (

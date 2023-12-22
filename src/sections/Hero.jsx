@@ -5,7 +5,7 @@ import TagLines from "../components/TagLines";
 
 const Hero = () => {
   return (
-    <section className="pt-12  max-lg:px-8 max-sm:px-2 max-sm:pt-4">
+    <section className="pt-12  max-lg:px-8 max-sm:px-0 max-sm:pt-4">
       <NavBar />
       <Title />
       <TagLines />
