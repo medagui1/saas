@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const FAQ = ({ question, answer }) => {
   const [isShown, setIsShown] = useState(false);
   return (
-    <div className="text-start border-b-2 border-secondary py-4 mb-6 max-sm:py-1">
+    <div className="text-start border-b-2 border-secondary py-4 mb-6 max-sm:py-1 cursor-pointer" data-aos='fade-down'>
       <div
         className=" py-4  w-full  flex justify-between items-center"
         onClick={() => setIsShown(!isShown)}
@@ -17,7 +17,7 @@ const FAQ = ({ question, answer }) => {
           }`}
         />
       </div>
-      <div className={`${!isShown && "hidden "}`}>
+      <div className={`max-h-0 transition-[height, opacity] duration-300 ease-in-out opacity-0 ${isShown && "max-h-full opacity-100"}`}>
         <p className="text-xl max-sm:text-sm mb-4"> {answer} </p>
       </div>
     </div>

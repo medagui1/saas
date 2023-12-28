@@ -2,7 +2,7 @@ import React from "react";
 
 const Review = ({ name, image, review, role }) => {
   return (
-    <div className="max-w-[1000px] text-white ">
+    <div className="max-w-[1000px] text-white" data-aos='fade-down'>
       <div className="relative">
         <p className="absolute top-0 left-0 text-secondary text-[160px] font-bold mt-[-100px] ml-[-20px] max-sm:text-[60px] max-sm:mt-[-30px] max-sm:ml-[-16px]">“</p>
         <p className="text-4xl text-white font-bold max-sm:text-xl"> {review} </p>

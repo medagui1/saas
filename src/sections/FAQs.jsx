@@ -7,7 +7,7 @@ const FAQs = () => {
 
   return (
     <section className="py-8 px-32 max-lg:px-4 max-sm:py-4 max-lg:py-16 flex flex-col justify-center items-center mt-32">
-      <h2 className="text-5xl max-sm:text-2xl font-bold capitalize  mb-20 max-sm:mb-4 max-lg:mb-6">
+      <h2 className="text-5xl max-sm:text-2xl font-bold capitalize  mb-20 max-sm:mb-4 max-lg:mb-6" data-aos='fade-down'>
         Our most <span className="text-secondary">frequently</span> asked
         questions
       </h2>

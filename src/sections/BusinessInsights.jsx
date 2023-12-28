@@ -4,6 +4,7 @@ import Insight from "../components/Insight";
 import { reviews } from "../constants";
 import Review from "../components/Review";
 import Button from "../components/Button";
+import { animate } from "../constants/animate";
 
 
 export const insights = [
@@ -22,13 +23,13 @@ export const insights = [
 const BusinessInsights = () => {
   return (
     <section className="bg-[#292526] py-24 px-32 max-lg:px-4 max-sm:py-8 max-lg:py-16 flex flex-col justify-center items-center">
-      <h2 className="text-5xl max-sm:text-2xl font-bold capitalize  mb-8 max-sm:mb-4 max-lg:mb-6 text-white lg:mx-24">
+      <h2 className="text-5xl max-sm:text-2xl font-bold capitalize  mb-8 max-sm:mb-4 max-lg:mb-6 text-white lg:mx-24" data-aos='fade-down'>
         How <span className="text-secondary">accessible</span> UX design is
         changing the <span className="text-secondary">businesses</span> for the
         better
       </h2>
       {insights.map((insight, index) => (
-        <Insight key={index} {...insight}/>
+        <Insight key={index} {...insight} data_aos='fade-down'/>
       ))}
 
       {/* <InsightCard /> */}
@@ -37,7 +38,7 @@ const BusinessInsights = () => {
           <Review key={index} {...review}/>
         ))}
       </div>
-      <Button text='See our case studies'/>
+      <Button text='See our case studies' data_aos='fade-down'/>
     </section>
   );
 };

@@ -3,7 +3,7 @@ import { plan_time_intervals } from "../constants";
 
 const PlanIntervals = ({ plan, setPlan }) => {
   return (
-    <div className="flex max-sm:text-sm max-sm:flex-col max-sm:gap-2 ">
+    <div className="flex max-sm:text-sm max-sm:flex-col max-sm:gap-2" data-aos='fade-down'>
       {plan_time_intervals.map((planInterval, index) => (
         <div key={planInterval.time} className="flex flex-col max-sm:flex-row-reverse justify-between items-center">
           {planInterval.saving ? <p className="text-secondary font-bold uppercase text-sm mb-2"> {planInterval.saving} </p> : <p className="invisible mb-2 text-sm font-bold">Hidden Text</p>}

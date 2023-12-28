@@ -1,8 +1,9 @@
 import React from "react";
 
-const Decision = ({ decision, isLeft }) => {
+const Decision = ({ decision, isLeft, data_aos }) => {
   return (
     <div
+    data-aos={data_aos}
       className={`${
         isLeft
           ? "rounded-r-[40px] rounded-tl-[40px] max-sm:rounded-r-[20px] max-sm:rounded-tl-[20px]"

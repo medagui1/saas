@@ -12,9 +12,17 @@ import DecisionMaking from './sections/DecisionMaking'
 import FAQs from './sections/FAQs'
 import CallToAction from './sections/CallToAction'
 import Footer from './sections/Footer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    AOS.init({duration : 800})
+  }, [])
 
   return (
     <main className='font-montserrat bg-[#E0EAF3] text-[#292526] '>

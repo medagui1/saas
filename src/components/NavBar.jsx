@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 import Button from "./Button";
+import { animate } from "../constants/animate";
 
 const NavBar = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -26,7 +27,7 @@ const NavBar = () => {
           className="lg:hidden"
           onClick={() => setIsMenuShown(!isMenuShown)}
         />
-        <img src="icons/logo.png" alt="Logo" />
+        <img src="icons/logo.png" alt="Logo" data-aos='fade-down-right'/>
       </div>
 
           <div className={`bg-[#29252695] h-[100vh]  absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px] transition-[width, opacity] duration-500 ease-in-out ${isMenuShown ? "opacity-1 w-[100%]" : "opacity-0 w-0"}`} onClick={() => setIsMenuShown(!isMenuShown)}>
@@ -41,7 +42,7 @@ const NavBar = () => {
             />
 
             {navLinks.map((link, index) => (
-              <a href={link.link} key={link.name}>
+              <a href={link.link} key={link.name} >
                 <p className={`${link.selected && "text-[#292526]"} translate-x-[-200px] opacity-0 ${isMenuShown && 'translate-x-[0] opacity-100'} transition-[transform, opacity] duration-[.6s]  ease-in-out`} style={{'transitionDelay' : `${index * 80}ms `}}>
                   {link.name}
                 </p>
@@ -50,15 +51,15 @@ const NavBar = () => {
           </div>
 
       <div className={`flex gap-12 font-bold uppercase max-lg:hidden`}>
-        {navLinks.map((link) => (
-          <a href={link.link} key={link.name}>
+        {navLinks.map((link, index) => (
+          <a href={link.link} key={link.name} data-aos={animate(index)}>
             <p className={`${link.selected && "text-secondary"} `}>
               {link.name}
             </p>
           </a>
         ))}
       </div>
-      <Button text="Get started" />
+      <Button text="Get started" data_aos='fade-down-left'/>
     </nav>
   );
 };

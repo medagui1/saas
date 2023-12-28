@@ -1,8 +1,8 @@
 import React from "react";
 
-const PromotionCard = ({ id, image, title, description }) => {
+const PromotionCard = ({ id, image, title, description, data_aos }) => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-[350px] ">
+    <div className="flex flex-col justify-center items-center max-w-[350px]" data-aos={data_aos}>
       <div className="flex justify-center items-center bg-secondary w-16 h-16 rounded-full">
         <p className="text-3xl text-white font-bold"> {id} </p>
       </div>
