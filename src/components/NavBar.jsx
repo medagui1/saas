@@ -29,11 +29,10 @@ const NavBar = () => {
         <img src="icons/logo.png" alt="Logo" />
       </div>
 
-        <div className="overflow-hidden">
           <div className={`bg-[#29252695] h-[100vh]  absolute z-30 top-0 right-0 mr-[-8px] mt-[-16px] transition-[width, opacity] duration-500 ease-in-out ${isMenuShown ? "opacity-1 w-[100%]" : "opacity-0 w-0"}`} onClick={() => setIsMenuShown(!isMenuShown)}>
 
           </div>
-          <div className={`bg-secondary text-white absolute top-0  h-[100vh] z-30  mt-[-16px] justify-center items-center flex flex-col text-xl gap-6 font-semibold transition-[left] duration-500 ease-in-out w-[80%] ${isMenuShown ? "left-0" : " left-[-100%] "}`}>
+          <div className={`bg-secondary text-white absolute top-0  h-[100vh] z-50  mt-[-16px] justify-center items-center flex flex-col text-xl gap-6 font-semibold transition-[left, opacity] duration-500 ease-in-out w-[80%] ${isMenuShown ? "left-0 opacity-1" : " left-[-100%] opacity-0"}`}>
             <img
               src="icons/close.svg"
               alt=""
@@ -41,15 +40,14 @@ const NavBar = () => {
               onClick={() => setIsMenuShown(!isMenuShown)}
             />
 
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <a href={link.link} key={link.name}>
-                <p className={`${link.selected && "text-[#292526] "} `}>
+                <p className={`${link.selected && "text-[#292526]"} translate-x-[-200px] opacity-0 ${isMenuShown && 'translate-x-[0] opacity-100'} transition-[transform, opacity] duration-[.6s]  ease-in-out`} style={{'transitionDelay' : `${index * 80}ms `}}>
                   {link.name}
                 </p>
               </a>
             ))}
           </div>
-        </div>
 
       <div className={`flex gap-12 font-bold uppercase max-lg:hidden`}>
         {navLinks.map((link) => (
