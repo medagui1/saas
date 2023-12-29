@@ -22,6 +22,7 @@ const NavBar = () => {
     <nav className="flex justify-between px-24 max-lg:px-4  pb-12 items-center w-full relative ">
       <div className="flex max-sm:gap-4 gap-12">
         <img
+        data-aos='fade-down'
           src="icons/hamburger.svg"
           alt=""
           className="lg:hidden"
@@ -37,7 +38,7 @@ const NavBar = () => {
             <img
               src="icons/close.svg"
               alt=""
-              className="absolute top-0 right-0 m-4"
+              className={`absolute top-0 right-0 m-4 rotate-0 transition-transform duration-500 delay-300 ease-in-out ${isMenuShown && 'rotate-[180deg]'}`}
               onClick={() => setIsMenuShown(!isMenuShown)}
             />
 
