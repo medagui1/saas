@@ -53,7 +53,7 @@ const NavBar = () => {
 
       <div className={`flex gap-12 font-bold uppercase max-lg:hidden`}>
         {navLinks.map((link, index) => (
-          <a href={link.link} key={link.name} data-aos={animate(index)}>
+          <a href={link.link} key={link.name} data-aos='fade-down'>
             <p className={`${link.selected && "text-secondary"} `}>
               {link.name}
             </p>

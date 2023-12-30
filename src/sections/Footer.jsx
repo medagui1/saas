@@ -9,7 +9,7 @@ const Footer = () => {
         <img src="images/footer_logo.webp" alt="" data-aos='fade-right'/>
         <div className="flex gap-4 mt-6 flex-wrap justify-center">
           {social_links.map((link, index) => (
-            <div className="flex gap-2 items-end" key={link.link} data-aos={animate(index)}>
+            <div className="flex gap-2 items-end" key={link.link} data-aos='fade-down'>
               <img
                 src={link.icon}
                 alt={link.link}

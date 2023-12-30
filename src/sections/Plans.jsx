@@ -14,7 +14,7 @@ const Plans = () => {
       <div className="flex gap-8 my-24 flex-wrap mx-20 items-stretch justify-center max-sm:my-12">
         {plans.map((plan, index) => (
             
-          <PlanCard plan={plan} key={plan.name} planInterval={planInterval} middle={index === 1 ? true : false} data_aos={animate(index)}/>
+          <PlanCard plan={plan} key={plan.name} planInterval={planInterval} middle={index === 1 ? true : false} data_aos='fade-down'/>
         ))}
       </div>
       <ContactUs />

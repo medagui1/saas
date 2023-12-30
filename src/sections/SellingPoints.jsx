@@ -18,7 +18,7 @@ const SellingPoints = () => {
       </p>
       <div className="flex gap-16 flex-wrap justify-center items-start my-12  w-full">
         {selling_points.map((point, index) => (
-            <SellingPoint key={point.title} image={point.image} title={point.title} description={point.description} data_aos={animate(index)}/>
+            <SellingPoint key={point.title} image={point.image} title={point.title} description={point.description} data_aos='fade-down'/>
         ))}
       </div>
     </section>

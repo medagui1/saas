@@ -31,7 +31,7 @@ const Promotion = () => {
             title={promotion.title}
             description={promotion.description}
             id={promotion.id}
-            data_aos={animate(index)}
+            data_aos='fade-down'
           />
         ))}
       </div>
