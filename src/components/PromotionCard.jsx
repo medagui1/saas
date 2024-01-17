@@ -12,7 +12,7 @@ const PromotionCard = ({ id, image, title, description, data_aos }) => {
           {title}{" "}
         </p>
       </div>
-      <img src={image} alt={title} className="h-[163px] "/>
+      <img src={image} alt={title} height={163}/>
       <p className="mt-4"> {description} </p>
     </div>
   );

@@ -21,7 +21,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    AOS.init({duration : 600, delay : 300})
+    AOS.init({duration : 600})
   }, [])
 
   return (

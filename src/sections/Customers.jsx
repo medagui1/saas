@@ -32,6 +32,8 @@ const Customers = () => {
             src={client.image}
             alt={client.name}
             key={client.name}
+            width={250}
+            height={100}
             className={`${
               index !== clients.length - 1 &&
               "lg:border-r-secondary lg:border-r-2 lg:px-12"

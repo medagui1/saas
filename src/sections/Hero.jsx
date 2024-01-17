@@ -9,8 +9,8 @@ const Hero = () => {
       <NavBar />
       <Title />
       <TagLines />
-      <div className="w-full flex justify-center items-center relative top-[-15px]" data-aos='fade-down'>
-        <img src="images/hero.webp" alt="" />
+      <div className="w-full flex justify-center items-center relative top-[-15px]">
+        <img src="images/hero.webp" alt="" width={770} height={434}/>
       </div>
     </section>
   );

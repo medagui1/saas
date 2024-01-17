@@ -8,6 +8,7 @@ const Insight = ({ image, content, data_aos }) => {
         backgroundImage: `url(${image})`,
         backgroundPositionX: "right" }}
       data-aos={data_aos}
+        
     >
       {content}
     </div>
